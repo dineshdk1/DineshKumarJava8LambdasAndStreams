@@ -1,0 +1,16 @@
+package com.test.project.java8;
+import java.util.*;
+import java.*;
+public class averageOfIntegers {
+	int average(ArrayList<Integer> list)
+	{
+		
+		
+		int avg=list
+				.stream()
+				.average()
+				.collect(Collectors.toInt());
+		return 0;
+	}
+
+}

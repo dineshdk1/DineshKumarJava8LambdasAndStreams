@@ -1,0 +1,18 @@
+package com.test.project.java8;
+import java.util.*;
+public class getPolindromeStrings {
+	static List<String> polindrome(ArrayList<String> list)
+	{
+		list
+		.stream()
+		.allMatch(i -> ispolindrome(i));
+		
+		return list;
+		
+	}
+	static boolean ispolindrome(String string)
+	{
+		
+	}
+
+}

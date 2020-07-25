@@ -1,0 +1,15 @@
+package com.test.project.java8;
+import java.util.*;
+import java.io.*;
+public class averageOfIntegers {
+	static int average(ArrayList<Integer> list)
+	{
+		
+		
+		int avg=list
+				.stream()
+				.average();
+		return avg;
+	}
+
+}

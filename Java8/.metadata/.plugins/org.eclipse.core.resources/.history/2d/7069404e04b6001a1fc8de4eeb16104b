@@ -1,0 +1,21 @@
+package com.test.project.java8;
+import java.util.*;
+public class getPolindromeStrings {
+	static List<String> polindrome(ArrayList<String> list)
+	{
+		list
+		.stream()
+		.allMatch(i -> ispolindrome(i));
+		
+		return list;
+		
+	}
+	static boolean ispolindrome(String string)
+	{
+		string=string.toLowerCase();
+		return IntStream.range(0,string.length()/2)
+				.noneMatch(i -> string.charAt(i)!=string.charAt(string.length()-i-1));
+		
+	}
+
+}

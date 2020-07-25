@@ -1,0 +1,16 @@
+package com.test.project.java8;
+import java.util.*;
+import java.io.*;
+public class averageOfIntegers {
+	static int average(ArrayList<Integer> list)
+	{
+		
+		
+		OptionalDouble avg=list
+				.stream()
+				.mapToDouble(x -> x)
+				.average();
+		return Integer.parseInt(avg);
+	}
+
+}
